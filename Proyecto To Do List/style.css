@@ -1,0 +1,191 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(11, 35, 63);
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+.contenedor{
+    margin: 0 auto;
+    width: 70%;
+}
+
+h1 {
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+
+.input {
+    width: 450px;
+    height: 50px;
+    margin: 5px;
+    padding: 0px 20px 0px 20px;
+    border: none;
+    border-radius: 10px;
+    background-color: white;
+    font-size: 18px;
+    outline: none;
+}
+
+.boton-agregar {
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(255, 6, 46);
+    color: rgb(255, 255, 255);
+    outline: none;
+}
+
+.boton-agregar:hover {
+    opacity: 0.9;
+}
+
+.item-input {
+    width: 350px;
+    height: 50px;
+    padding: 0px 20px 0px 20px;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    background: none;
+    outline: none;
+}
+
+.item {
+    margin-bottom: 10px;
+}
+
+.container {
+    margin-top: 20px;
+}
+
+.boton-editar {
+    margin: 0px 5px 0px 5px;
+    border: none;
+    background: none;
+    color: #62d0ff;
+    font-size: 1.4rem;
+    font-family: 'Montserrat', sans-serif;
+    outline: none;
+}
+
+.boton-remover {
+    width: 50px;
+    height: 50px;
+    margin: 0px 5px 0px 5px;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(255, 6, 46);
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    outline: none;
+}
+
+.exito {
+    border: 1px solid #62d0ff;
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
+    width: 350px;
+    height: 40px;
+    font-size: 22px;
+    margin: 0 auto;
+    padding: 5px;
+    line-height: 30px;
+    animation: slide-up 1s ease;
+}
+
+.error {
+    border: 1px solid rgb(255, 0, 0);
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
+    width: 350px;
+    height: 40px;
+    font-size: 22px;
+    margin: 0 auto;
+    padding: 5px;
+    line-height: 30px;
+    animation: slide-up 1s ease;
+}
+
+@keyframes slide-up {
+    0%{
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    h1{
+        display: block;
+        width: 100vw;
+        font-size: 1.5em;
+    }
+
+    .input-div {
+        display: flex;
+        justify-content: center;
+        width: 100vw;
+    }
+
+    .input{
+        width: 290px;
+        height: 40px;
+        padding: 0px 10px 0px 10px;
+    }
+
+    .boton-agregar {
+        width: 40px;
+        height: 40px;
+    }
+
+    .item {
+        display: flex;
+        justify-content: center;
+        width: 100vw;
+    }
+
+    .item-input{
+        width: 210px;
+        height: 40px;
+        font-size: 14px;
+        padding: 0px 10px 0px 10px;
+    }
+
+    .boton-remover {
+        width: 40px;
+        height: 40px;
+    }
+
+    .exito {
+        width: 250px;
+        font-size: 14px;   
+    }
+
+    .error {
+        width: 250px;
+        font-size: 14px;   
+    }
+
+}
+
+
+
+
+
+
+
+
+
